@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
         <div className="row-start-2 rounded-lg overlow-hidden self-end">
           <Image
-            src="/public/AdobeStock_362497671 1.png"
+            src="/AdobeStock_362497671 1.png"
             alt="A man and his son watching a video"
           />
         </div>

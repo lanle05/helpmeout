@@ -1,4 +1,5 @@
 import "styles/globals.css";
+import { useEffect } from "react";
 import { Work_Sans, Sora } from "next/font/google";
 
 const work = Work_Sans({
@@ -13,17 +14,20 @@ const sora = Sora({
   variable: "--font-sora",
 });
 
-export const Metadata = {
-  title: "Help Me Out",
-  description: "Your web Assistant",
-};
+function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    // Run any global initialization or side effects here
+  }, []);
 
-export default function MyApp({ Component, pageProps }) {
   return (
-    <html lang="en" className={` ${work.variable} ${sora.variable}`}>
-      <body className={work.className}>
-        {/* <Component {...pageProps} /> */}
-      </body>
-    </html>
+    <>
+      <html lang="en" className={` ${work.variable} ${sora.variable}`}>
+        <body className={work.className}>
+          <Component {...pageProps} />
+        </body>
+      </html>
+    </>
   );
 }
+
+export default MyApp;

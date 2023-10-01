@@ -11,14 +11,23 @@
   "dependencies": {
     "next": "latest",
     "react": "latest",
+    "react-devtools": "^4.28.0",
     "react-dom": "latest",
     "react-icons": "^4.11.0"
   },
   "devDependencies": {
+    "@types/estree": "^1.0.2",
+    "@types/yauzl": "^2.10.1",
     "autoprefixer": "latest",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "html-webpack-plugin": "^5.5.3",
     "postcss": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "ts-node": "^10.9.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }
