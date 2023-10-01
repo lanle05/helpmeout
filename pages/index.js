@@ -1,10 +1,19 @@
 import Image from 'next/image'
-import { PopupModal } from '@/components/extension_modal';
-
+import { Features } from '@/components/features';
+import { Footer } from '@/components/footer';
+import { Navbar } from "@/components/navbar.jsx";
+import { Hero } from "@/components/hero.jsx";
+import { walkThrough } from '@/components/walkthrough.jsx';
 export default function Home() {
   return (
-    <main className="w-ful flex justify-center p-10">
-      <PopupModal />
+    <main>
+      <>
+        <Navbar />
+        <Hero />
+        <Features />
+        <walkThrough />
+        <Footer />
+      </>
     </main>
   );
 }
