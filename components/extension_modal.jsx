@@ -39,7 +39,7 @@ export const PopupModal = () => {
           </p>
         </div>
         <div className="flex w-full justify-center gap-8">
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 ">
             <Image
               src="/monitor.svg"
               alt="monitor icon"
